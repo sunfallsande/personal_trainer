@@ -14,8 +14,8 @@ export default function Customers() {
 
     const fetchData = () => {
         fetch('https://customerrest.herokuapp.com/api/customers')
-        .then(response => response.json())
-        .then(data => setCustomers(data.content))
+            .then(response => response.json())
+            .then(data => setCustomers(data.content))
     }
 
 
@@ -57,9 +57,9 @@ export default function Customers() {
 
 
 
-    return(
-             <div>
-                <ReactTable filterable={true} data={customers} columns={columns} />
-             </div>
+    return (
+        <div>
+            <ReactTable filterable={true} data={customers} columns={columns} />
+        </div>
     );
 }

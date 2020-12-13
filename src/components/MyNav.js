@@ -5,19 +5,19 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
-import Tabs from'@material-ui/core/Tabs';
-import Tab  from'@material-ui/core/Tab'
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab'
 
-  export default function MyNav() {
+export default function MyNav() {
 
   return (
     <div>
-        <AppBar position="static">
+      <AppBar position="static">
         <Tabs>
-        <Tab  href="/customers" label="Customers">Customers</Tab>
-        <Tab  href="/trainings" label="Trainings">Trainings</Tab>
+          <Tab href="/customers" label="Customers">Customers</Tab>
+          <Tab href="/trainings" label="Trainings">Trainings</Tab>
         </Tabs>
       </AppBar>
     </div>
   );
-  }
+}

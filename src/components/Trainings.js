@@ -6,13 +6,13 @@ import Moment from 'react-moment';
 export default function Trainings() {
     const [trainings, setTrainings] = useState([]);
 
-    useEffect(() => fetchData() , []);
+    useEffect(() => fetchData(), []);
 
     const fetchData = () => {
-        fetch('https://customerrest.herokuapp.com/gettrainings', {method: 'GET'})
-        	.then(response => response.json())
-        	.then(data => setTrainings(data))
-		.catch(err => console.error(err));
+        fetch('https://customerrest.herokuapp.com/gettrainings', { method: 'GET' })
+            .then(response => response.json())
+            .then(data => setTrainings(data))
+            .catch(err => console.error(err));
     }
 
     const columns = [
@@ -32,13 +32,13 @@ export default function Trainings() {
         {
             Header: 'Customer',
             accessor: 'customer.firstname',
-        },{
+        }, {
             accessor: 'customer.lastname'
 
         },
     ]
 
-    return(
+    return (
         <div>
             <ReactTable filterable={true} data={trainings} columns={columns} />
 

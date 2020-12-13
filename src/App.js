@@ -10,13 +10,13 @@ function App() {
     <div className="App">
 
       <BrowserRouter>
-      <MyNav />
-            <Switch>
-              <Route exact path="/" component={Customers}></Route>
-              <Route path="/customers" component={Customers}></Route>
-              <Route path="/trainings" component={Trainings}></Route>
-            </Switch>
-            </BrowserRouter>
+        <MyNav />
+        <Switch>
+          <Route exact path="/" component={Customers}></Route>
+          <Route path="/customers" component={Customers}></Route>
+          <Route path="/trainings" component={Trainings}></Route>
+        </Switch>
+      </BrowserRouter>
 
     </div>
   );
