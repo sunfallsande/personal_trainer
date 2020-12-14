@@ -16,6 +16,7 @@ export default function MyNav() {
         <Tabs>
           <Tab href="/customers" label="Customers">Customers</Tab>
           <Tab href="/trainings" label="Trainings">Trainings</Tab>
+          <Tab href="/calendar" label="Calendar">Calendar</Tab>
         </Tabs>
       </AppBar>
     </div>

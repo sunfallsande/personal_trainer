@@ -5,6 +5,9 @@ import MyNav from './components/MyNav';
 import Customers from './components/Customers';
 import Trainings from './components/Trainings';
 
+
+
+
 function App() {
   return (
     <div className="App">
