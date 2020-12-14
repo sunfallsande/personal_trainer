@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import MyNav from './components/MyNav';
 import Customers from './components/Customers';
 import Trainings from './components/Trainings';
+import MyCalendar from './components/Calendar';
 
 
 
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/" component={Customers}></Route>
           <Route path="/customers" component={Customers}></Route>
           <Route path="/trainings" component={Trainings}></Route>
+          <Route path="/calendar" component={MyCalendar}></Route>
         </Switch>
       </BrowserRouter>
 
